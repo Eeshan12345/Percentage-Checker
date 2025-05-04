@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <style>
+.grid-container{
+    display: grid;
+    gap: 4px;
+    grid-template-areas: 
+    "header header"
+    "menu content"
+    "footer footer";
+    grid-template-columns: 1fr 3fr;
+    text-align:center;
+}
+
+.grid-child{
+    border: 1px solid red;
+    height: 50px;
+}
+.a-header{
+    grid-area: header;
+}
+.a-aside{
+    grid-area: menu;
+}
+.a-main{
+    grid-area: content;
+}
+.a-footer{
+    grid-area: footer;
+}
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="grid-child a-header">A</div>
+            <div class="grid-child a-aside">B</div>
+            <div class="grid-child a-main">C</div>
+            <div class="grid-child a-footer">D</div>
+        </div>
+    </body>
+</html>

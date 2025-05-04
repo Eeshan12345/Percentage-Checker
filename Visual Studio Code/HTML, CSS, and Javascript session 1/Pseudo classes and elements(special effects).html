@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+.abc:hover{
+	color: white;
+    background-color: black;
+}
+
+input:focus {
+  background-color: yellow;
+}
+
+.def::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+.def::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+.def::after{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+::marker { 
+  color: red;
+  font-size: 12px;
+}
+
+::selection{
+    background-color: red;
+    color:white;
+}
+</style>
+</head>
+<body>
+
+<h2 class="abc">Styling a link depending on state</h2>
+
+<p><b><a href="#" target="_blank">This is a link</a></b></p>
+First name: <input type="text" name="fname"><br><br>
+<p class="def">You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<ol>
+  <li>First</li>
+  <li>Second</li>
+  <li>Third</li>
+</ol>
+
+</body>
+</html>
+
+

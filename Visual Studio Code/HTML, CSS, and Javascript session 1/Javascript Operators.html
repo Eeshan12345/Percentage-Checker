@@ -1,0 +1,65 @@
+<html>
+    <body>
+        <h2>COMPARISON OPERATOR EXAMPLE</h2>
+        <div id="root"></div>
+</body>
+        <style>
+
+            body{
+    background-color: lightgreen;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+        </style>
+
+
+
+
+
+        <sript>
+addEventListener("DOMContentLoaded", (event) => {
+    const root = document.getElementById("root")
+    
+    const num1 = 10
+    const num2 = 5
+    
+    const num1Element = document.createElement('p')
+    num1Element.textContent=`Number 1: ${num1}`
+    
+    const num2Element = document.createElement('p')
+    num2Element.textContent=`Number 2: ${num2}`
+    
+    root.appendChild(num1Element)
+    root.appendChild(num2Element)
+    
+    const eq = document.createElement('p')
+    eq.textContent=`Equal to (==): ${num1 == num2}`
+    root.appendChild(eq)
+    
+    const neq = document.createElement('p')
+    neq.textContent=`Not equal to (!=): ${num1 != num2}`
+    root.appendChild(neq)
+    
+    const gt = document.createElement('p')
+    gt.textContent=`Greater than (>): ${num1 > num2}`
+    root.appendChild(gt)
+    
+    const lt = document.createElement('p')
+    lt.textContent=`Less than (<): ${num1 < num2}`
+    root.appendChild(lt)
+    
+    const gte = document.createElement('p')
+    gte.textContent=`Greater than or equal to (>=): ${num1 >= num2}`
+    root.appendChild(gte)
+    
+    const lte = document.createElement('p')
+    lte.textContent=`Less than or equal to (<=): ${num1 <= num2}`
+    root.appendChild(lte)
+    
+    
+    
+    });
+        
+</sript>
+</html>
